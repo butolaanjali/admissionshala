@@ -1,0 +1,80 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  .advantages {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .advantage {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    
+  }
+  
+  .icon {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    background: #ff6f00;
+    border-radius: 50%;
+    padding: 10px;
+    
+  }
+  .icon i {
+    font-size: 40px; /* Adjust font size for icon */
+  }
+  
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .title {
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .description {
+    margin-top: 10px;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    color: #666;
+  }
+  @media (max-width: 768px) {
+    .advantage {
+      width: 100%; 
+      max-width: none;
+    }
+    .advantage {
+      width: calc(33.33% - 20px); /* Three items per row, minus gap */
+    }
+  }
+  
+  
